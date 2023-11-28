@@ -4,26 +4,26 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Extemporaneous Prompts</title>
+  <title>{{type}} Prompts</title>
 
-  <script defer src="{{url_for('static', filename='impromptu.js')}}"></script>
+  <script defer {{js}}></script>
   <link rel="stylesheet" href="{{url_for('static', filename='impromptu.css')}}">
 </head>
 <body onload="cardRevealAnim();">
   <div class="card-bottom card">
-    <p class="category">Extemporaneous</p>
+    <p class="category">{{type}}</p>
     <p class="topic">{{n1["title"]}}</p>
     <p class="author">{{n1["caption"]}}</p>
   </div>
 
   <div class="card-top card">
-    <p class="category">Extemporaneous</p>
+    <p class="category">{{type}}</p>
     <p class="topic">{{n2["title"]}}</p>
     <p class="author">{{n2["caption"]}}</p>
   </div>
 
   <div class="card-middle card">
-    <p class="category">Extemporaneous</p>
+    <p class="category">{{type}}</p>
     <p class="topic">{{n3["title"]}}</p>
     <p class="author">{{n3["caption"]}}</p>
   </div>

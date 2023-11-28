@@ -1,5 +1,13 @@
-document.getElementById('timer').innerHTML =
-   7+ ":" + 00;
+const w = window.location
+
+const time = (Time) =>{
+  document.getElementById('timer').innerHTML = Time + ":" + 00;
+}
+
+if (window.location.href.indexOf("/extemporaneous/") > -1) {  
+  time(30)
+} else {time(7)}
+
 
 function startTimer() {
   var presentTime = document.getElementById('timer').innerHTML;

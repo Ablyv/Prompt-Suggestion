@@ -1,3 +1,7 @@
+const w = window.location
+
+if (window.location.href.indexOf("/extemporaneous/") > -1) {type="/extemporaneous/"} else {type="/impromptu/"}
+  
 const cardRevealAnim = () =>{
   cardBottom.style.animation="moveDownTwo 0.6s forwards";
   cardTop.style.animation="moveDownOne 0.6s forwards";
@@ -10,17 +14,17 @@ let cardTop = document.getElementsByClassName('card-top')[0];
 
 let redirectTopicM = () =>{
   let x = document.getElementsByClassName('topic')[2]
-  window.location.href = '/impromptu/' + x.innerHTML
+  window.location.href = type + x.innerHTML
 }
 
 let redirectTopicT = () =>{
   let y = document.getElementsByClassName('topic')[1]
-  window.location.href = '/impromptu/' + y.innerHTML
+  window.location.href = type + y.innerHTML
 }
 
 let redirectTopicB = () =>{
   let z = document.getElementsByClassName('topic')[0]
-  window.location.href = '/impromptu/' + z.innerHTML
+  window.location.href = type + z.innerHTML
 }
 
 
